@@ -25,7 +25,7 @@ bc3net <- function(dataset, boot=100, estimator="pearson", disc="none", mtc1=TRU
         }          
  
       expdata=dataset[,sample(1:ncol(dataset),size=ncol(dataset),replace=TRUE)]
-      mim=mimwrap(expdata,estimator=estimator) 
+      mim=mimwrap(expdata,estimator=estimator,disc=disc) 
             
       net=c3(mim)
       net[upper.tri(net)]=0

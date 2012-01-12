@@ -28,12 +28,10 @@
     c3net gaussian estimator (pearson)
             "gaussian"
 
-    bspline requires installation of mis_calc
-            "bspline"}
-  
+  }  
   \item{disc}{
-	    only required for discrete estimators (minet package)
-            "equalfreq", "equalwidth"
+	    only required for discrete estimators (see minet package)
+            "equalwidth" (default), "globalequalwidth" , "equalfreq"
 	  }
 	  
 }

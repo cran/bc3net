@@ -50,8 +50,6 @@ gene expression data matrix
     minet package (discrete estimators)
             "mi.empirical", "mi.mm","mi.sg","mi.shrink"
 
-    bspline only available on linux/MAC system if 'mis_calc' is installed see ?bspline
-            "bspline"
   }
   
   \item{disc}{
