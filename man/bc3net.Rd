@@ -59,8 +59,8 @@ weighted=TRUE, igraph=TRUE, verbose=FALSE)
             "bspline"}
   
   \item{disc}{
-	    only required for discrete estimators (minet package)
-            "equalfreq", "equalwidth"
+	    only required for discrete estimators (see minet package)
+            "equalwidth" (default),  "equalfreq", "globalequalwidth" 
   }
   \item{nullit}{
      nullit defines the size of the generated null distribution vector
