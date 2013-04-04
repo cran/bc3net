@@ -23,7 +23,7 @@ number of iterations.
 
 }
 \usage{
-makenull(dataset, nullit=NA, estimator="pearson", disc="none")
+makenull(dataset, nullit=NA, estimator="pearson", disc="equalwidth")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -44,17 +44,17 @@ gene expression data matrix
 }
 \item{estimator}{
   
-    minet package (continuous estimators)
-            "pearson", "spearman", "kendall", "spearman"
+    estimators for continuous variables
+            "pearson" (default), "spearman", "kendall", "spearman"
 
-    minet package (discrete estimators)
-            "mi.empirical", "mi.mm","mi.sg","mi.shrink"
+    estimators for discrete variables
+            "emp", "mm","sg","shrink"
 
   }
   
   \item{disc}{
-	    only required for discrete estimators (minet package)
-            "equalfreq", "equalwidth"
+	    only required for discrete estimators, method for discretize function (infotheo package)
+            "equalfreq" (default), "equalwidth", "globalequalwith"
 	  }
 	  
 

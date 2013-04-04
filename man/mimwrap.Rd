@@ -5,11 +5,11 @@
 
 \description{
   Mutual information matrix estimation wrapper function for various
-  mutual information estimators (minet package, b-spline).
+  mutual information estimators. Depends on infotheo package for mutual information estimators on discrete variables.
  }
 
 \usage{
-  mimwrap(dataset, estimator="pearson", disc="none")
+  mimwrap(dataset, estimator="pearson", disc="equalwidth", bins = sqrt(ncol(dataset)))
 }
 
 \arguments{
@@ -19,20 +19,21 @@
     }  
 
   \item{estimator}{
-    minet package (continuous estimators)
-            "pearson", "spearman", "kendall", "spearman"
+    estimators for continuous variables
+            "pearson" (default), "spearman", "kendall", "spearman"
 
-    minet package (discrete estimators)
-            "mi.empirical", "mi.mm","mi.sg","mi.shrink"
-
-    c3net gaussian estimator (pearson)
-            "gaussian"
+    estimators for discrete variables (infotheo package)
+            "emp", "mm","sg","shrink"
 
   }  
   \item{disc}{
-	    only required for discrete estimators (see minet package)
+	    only required for discrete estimators (see infotheo package)
             "equalwidth" (default), "globalequalwidth" , "equalfreq"
 	  }
+  \item{bins}{
+            number of bins for the descretize function (infotheo), 
+            default sqrt(ncol(dataset))
+  }
 	  
 }
 
