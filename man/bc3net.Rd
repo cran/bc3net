@@ -30,7 +30,7 @@ network G^b_k.
 }
 
 \usage{
-bc3net(dataset, boot=100, estimator="pearson", disc="none", mtc1=TRUE,
+bc3net(dataset, boot=100, estimator="pearson", disc="equalwidth", mtc1=TRUE,
 alpha1=0.05, nullit=NA, null=c(), adj1="bonferroni", mtc2=TRUE,
 alpha2=0.05, adj2="bonferroni",
 weighted=TRUE, igraph=TRUE, verbose=FALSE)
@@ -46,20 +46,14 @@ weighted=TRUE, igraph=TRUE, verbose=FALSE)
       of c3net gene regulatory networks
   }
   \item{estimator}{
-    minet package (continuous estimators)
+    estimators for continuous variables
             "pearson", "spearman", "kendall", "spearman"
 
-    minet package (discrete estimators)
-            "mi.empirical", "mi.mm","mi.sg","mi.shrink"
-
-    c3net gaussian estimator (pearson)
-            "gaussian"
-
-    bspline requires installation of "mis_calc"
-            "bspline"}
-  
+    estimators for discrete variables
+            "emp", "mm","sg","shrink"
+  }
   \item{disc}{
-	    only required for discrete estimators (see minet package)
+	    required for discrete estimators, method for discretize function (see infotheo package)
             "equalwidth" (default),  "equalfreq", "globalequalwidth" 
   }
   \item{nullit}{

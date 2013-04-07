@@ -1,6 +1,6 @@
 
 
-makenull <- function(dataset,nullit=NA, estimator="pearson", disc="none"){
+makenull <- function(dataset,nullit=NA, estimator="pearson", disc="equalwidth"){
      
      if(!is.matrix(dataset)){
         cat("dataset not a matrix\n")

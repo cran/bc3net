@@ -1,5 +1,5 @@
 
-bc3net <- function(dataset, boot=100, estimator="pearson", disc="none", mtc1=TRUE, alpha1=0.05, nullit=NA, null=c(),adj1="bonferroni", mtc2=TRUE, alpha2=0.05, adj2="bonferroni", weighted=TRUE, igraph=TRUE, verbose=FALSE){
+bc3net <- function(dataset, boot=100, estimator="pearson", disc="equalwidth", mtc1=TRUE, alpha1=0.05, nullit=NA, null=c(),adj1="bonferroni", mtc2=TRUE, alpha2=0.05, adj2="bonferroni", weighted=TRUE, igraph=TRUE, verbose=FALSE){
 
     bnet = matrix(0,nrow=nrow(dataset),ncol=nrow(dataset))
     colnames(bnet)=rownames(dataset)
