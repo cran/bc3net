@@ -1,5 +1,5 @@
-41171c59f1370cf6453d0ed01f1a7787 *DESCRIPTION
-012592abf4b40a8d741b299df2ded05a *NAMESPACE
+71391f71f43374ce16165dfeec24f6e3 *DESCRIPTION
+f1aeddcb7eea90706bb36e0d4e49f40f *NAMESPACE
 af96608e025cfe487e976024aebe656e *R/bc3net.R
 a3cc6f5c80f1e6f6daa1f984df213ecb *R/binsearch.R
 758b9c0afc96e260e611dfefe5318780 *R/c3mtc.R
@@ -8,7 +8,6 @@ a3cc6f5c80f1e6f6daa1f984df213ecb *R/binsearch.R
 98ee45c757cd99e110f44578738e831a *R/mat2igraph.R
 2faf346cedb6258ea3d8c2b26534f8b2 *R/mimwrap.R
 c3c079e4463487fb96b02b9c7b02dd8e *data/expmat.rda
-531af9ae0c08ac1af367a1c56c8be714 *docs/bc3net-manual.pdf
 d3e055a9db0e2c439caed1436e3749fa *man/bc3net-package.Rd
 5dfe82f3370176adab7656d3b91d3799 *man/bc3net.Rd
 022ead3aca0c6f0b064a0270f0bb80c6 *man/c3mtc.Rd
