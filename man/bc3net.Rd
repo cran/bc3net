@@ -9,7 +9,8 @@ The basic idea of BC3NET is to generate from one dataset D_s,
 consisting of s samples, an ensemble of B independent bootstrap datasets
 D_k by sampling from D(s) with replacement by using a non-parametric
 bootstrap (Efron 1993). Then, for each generated data set D_k in the
-ensemble, a network G^b_k is inferred by using C3NET (Altay 2010a). From the ensemble of networks G^b_k we construct one weighted network 
+ensemble, a network G^b_k is inferred by using C3NET (Altay 2010a). 
+From the ensemble of networks G^b_k we construct one weighted network 
 G^b_w which is used to determine the statistical significance of the
 connection between gene pairs. This results in the final binary,
 undirected network G.
@@ -117,7 +118,7 @@ BC3NET Gene regulatory network inference
 regulatory networks. BMC Syst Biol. 2010 Sep 28;4:132.
 
  de Matos Simoes R, Emmert-Streib F. Bagging statistical network inference from
-large-scale gene expression data. PLoS One. 2012;7(3):e33624. Epub 2012 Mar 30.
+large-scale gene expression data. PLoS One. 2012;7(3):e33624, Epub 2012 Mar 30,  <doi:10.1371/journal.pone.0033624>.
 
  de Matos Simoes R, Emmert-Streib F. Influence of statistical estimators of
 mutual information and data heterogeneity on the inference of gene regulatory

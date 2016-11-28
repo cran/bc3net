@@ -5,4 +5,4 @@ import("infotheo")
 import("lattice")
 import("Matrix") 
 importFrom("stats", "cor", "p.adjust", "pbinom")
-
+importFrom("stats", "fisher.test")
